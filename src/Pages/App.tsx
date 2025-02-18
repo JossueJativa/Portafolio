@@ -1,6 +1,7 @@
 import { Navbar } from '../Components';
 import { AboutMe } from './AboutMe';
 import { Projects } from './Projects';
+import { Contact } from './Contact';
 
 export const App = () => {
     return (
@@ -9,6 +10,8 @@ export const App = () => {
             <AboutMe />
             <br />
             <Projects />
+            <br />
+            <Contact />
         </>
     )
 }

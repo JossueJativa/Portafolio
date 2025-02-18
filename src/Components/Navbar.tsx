@@ -7,7 +7,7 @@ import { logo } from '../assets/img';
 const pages: { [key: string]: string }[] = [
     { Conóceme: '#about' },
     { Proyectos: '#projects' },
-    { contact: '#contact' }
+    { Contactare: '#contact' }
 ]
 
 export const Navbar = () => {

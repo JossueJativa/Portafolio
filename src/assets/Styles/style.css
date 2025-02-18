@@ -92,6 +92,14 @@ body {
     border-radius: 0px;
 }
 
+.grid-2-item-half {
+    display: grid;
+    grid-template-columns: 1fr .1fr;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
 .container-contact .grid-contact {
     display: flex;
     flex-direction: row;
@@ -228,6 +236,7 @@ body {
 .text-box-about {
     transform: skewX(0deg);
     text-align: justify !important;
+    width: 100%;
 }
 
 .text-box-about .description {
@@ -278,6 +287,33 @@ body {
     width: 50%;
 }
 
+.control-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.column-control {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 0.7fr 1fr;
+}
+
+.final-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -294,11 +330,13 @@ body {
     .grid-3-items {
         display: flex;
         flex-direction: column;
+        width: 100% !important;
     }
 
     .grid-5-items {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100% !important;
     }
 
     .item {
@@ -335,6 +373,32 @@ body {
     }
 
     .max-with {
-        max-width: 350px;
+        max-width: 100%;
+    }
+
+    .control-form {
+        padding: 0.5rem;
+    }
+
+    .input {
+        padding: 0.3rem;
+    }
+
+    .column-control {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2-item-half {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .final-contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px 150px;
     }
 }
