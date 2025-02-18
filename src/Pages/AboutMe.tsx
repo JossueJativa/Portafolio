@@ -98,7 +98,7 @@ export const AboutMe = () => {
             <br />
             <p className='title'>Sobre mi</p>
             <FloatTextBox className="text-box-about">
-                <p className='description'>
+                <p className='description min-mobile'>
                     ¡Hola! Soy Jossue Játiva, y va a ser un placer trabajar con usted/es, 
                     soy un joven que trabaja desde el 2023 en desarrollo de software, 
                     con fácil adaptabilidad a lo que requieras, con distintas tecnologías, 
